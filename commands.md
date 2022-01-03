@@ -1,0 +1,24 @@
+## Commands
+- `kubectl run <pod_name> --image <image_name> ` - creates and runs pod through CLI, deprecated.
+- `kubectl create` - create some resource via CLI or YAML
+- `kubectl apply` - create/update anything via YAML
+  - `kubectl apply -f <YAML_file>` - preferred way to create objects.
+  - `kubectl apply -f <dir>/` - creates objects from all the YAML files in the directory.
+- `kubectl version` - get version.
+- `kubectl get pods` - gets all pods.
+- `kubectl get all` - get all objects.
+- `kubectl logs <pod_name>` - get logs
+  - `--follow` 
+  - `--tail`
+- `kubectl describe <object> <object_name>` - gives you a lot of information about an object
+- `kubectl delete <object> <object_name>` - deletes an object.
+- `kubectl expose` - creates a service for existing pods.
+- `kubectl api-resources` - get all k8s resource
+- `kubectl api-versions` - get API version for resources
+- `kubectl exoplain services --recursive` - explains all the keys a `kind` supports in the YAML file, in this case services.
+    - `kubectl exoplain services.spec` - only the keys for the `spec` in the YAML file.
+- `kubectl get namespaces`
+- `kubectl get all --all-namespaces`
+- `kubectl config get-contexts`
+- `kubectl config set`
+---
