@@ -3,6 +3,7 @@
 - `container orchestration` - make many servers or nodes act like one.
   - designed to automate change and monitor the state of things and ensure that everything is the state that you expect it to be.
   - If change rate and amount of servers are a huge concern then you should consider `container orchestration`.
+- `state` - data created and used by your application which must not be lost. 
 ---
 
 ## Basic Terms

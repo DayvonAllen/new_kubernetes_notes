@@ -12,11 +12,12 @@
   - `--tail`
 - `kubectl describe <object> <object_name>` - gives you a lot of information about an object
 - `kubectl delete <object> <object_name>` - deletes an object.
+  - `kubectl delete -f <file_name>` - deletes the resources for the deployment.
 - `kubectl expose` - creates a service for existing pods.
 - `kubectl api-resources` - get all k8s resource
 - `kubectl api-versions` - get API version for resources
-- `kubectl exoplain services --recursive` - explains all the keys a `kind` supports in the YAML file, in this case services.
-    - `kubectl exoplain services.spec` - only the keys for the `spec` in the YAML file.
+- `kubectl explain services --recursive` - explains all the keys a `kind` supports in the YAML file, in this case services.
+    - `kubectl explain services.spec` - only the keys for the `spec` in the YAML file.
 - `kubectl get namespaces`
 - `kubectl get all --all-namespaces`
 - `kubectl config get-contexts`
